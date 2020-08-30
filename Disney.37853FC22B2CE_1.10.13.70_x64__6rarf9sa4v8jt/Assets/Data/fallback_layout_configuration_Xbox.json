@@ -1,0 +1,892 @@
+{
+  "collectionsWhitelist": [
+    "avatars",
+    "brand",
+    "character",
+    "contentType",
+    "editorial",
+    "explore",
+    "franchise",
+    "home",
+    "originals",
+    "watchlist"
+  ],
+  "setsWhitelist": [
+    "BecauseYouSet",
+    "brand",
+    "category",
+    "character",
+    "contentType",
+    "ContinueWatchingSet",
+    "editorial",
+    "featured",
+    "franchise",
+    "genre",
+    "hero",
+    "RecommendationSet",
+    "TrendingSet",
+    "WatchlistSet"
+  ],
+  "containersWhitelist": [
+    "HeroContainer",
+    "HeroFullBleedContainer",
+    "ShelfContainer",
+    "GridContainer"
+  ],
+  "configs": {
+    "avatars": {
+      "filters": {
+        "purpose": [
+          "tile"
+        ],
+        "aspectRatio": [
+          1.0
+        ],
+        "text_field": [
+          "title"
+        ],
+        "text_type": [
+          "full"
+        ]
+      },
+      "sets": {
+        "default": {
+          "shelf_grid": {
+            "texts": {
+              "title": {
+                "field": "title",
+                "type": "full",
+                "sourceEntity": "set"
+              }
+            },
+            "breakpoints": {
+              "all": {
+                "tiles": 7,
+                "images": {
+                  "tile": {
+                    "aspectRatio": 1.0,
+                    "purpose": [
+                      "tile"
+                    ],
+                    "roundedCorners": false
+                  }
+                },
+                "texts": {
+                  "title": {
+                    "field": "title",
+                    "type": "full",
+                    "sourceEntity": "avatar"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "brand": {
+      "filters": {
+        "purpose": [
+          "full_bleed",
+          "hero_collection",
+          "hero",
+          "logo",
+          "tile",
+          "title_treatment",
+          "thumbnail"
+        ],
+        "aspectRatio": [
+          1.78,
+          2.0
+        ],
+        "text_field": [
+          "title"
+        ],
+        "text_type": [
+          "full"
+        ]
+      },
+      "images": {
+        "background": {
+          "aspectRatio": 1.78,
+          "purpose": [
+            "hero_collection",
+            "hero"
+          ],
+          "roundedCorners": false
+        },
+        "logo": {
+          "aspectRatio": 2.0,
+          "purpose": [
+            "logo"
+          ],
+          "format": "png",
+          "roundedCorners": false
+        }
+      },
+      "videoArt": {
+        "background": {
+          "purpose": [
+            "full_bleed",
+            "hero_collection"
+          ]
+        }
+      },
+      "sets": {
+        "default": {
+          "shelf_grid": {
+            "texts": {
+              "title": {
+                "field": "title",
+                "type": "full",
+                "sourceEntity": "set"
+              }
+            },
+            "breakpoints": {
+              "all": {
+                "tiles": 4,
+                "images": {
+                  "tile": {
+                    "aspectRatio": 1.78,
+                    "purpose": [
+                      "thumbnail",
+                      "tile"
+                    ]
+                  },
+                  "background": {
+                    "aspectRatio": 1.78,
+                    "purpose": [
+                      "hero_collection",
+                      "hero"
+                    ],
+                    "roundedCorners": false
+                  },
+                  "logo": {
+                    "aspectRatio": 1.78,
+                    "purpose": [
+                      "logo",
+                      "title_treatment"
+                    ],
+                    "format": "png",
+                    "roundedCorners": false
+                  }
+                },
+                "videoArt": {
+                  "background": {
+                    "aspectRatio": 1.78,
+                    "purpose": [
+                      "full_bleed",
+                      "hero_collection"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "character": {
+      "filters": {
+        "purpose": [
+          "hero",
+          "title_treatment",
+          "hero_collection",
+          "logo",
+          "tile",
+          "thumbnail"
+        ],
+        "aspectRatio": [
+          1.78,
+          2.0
+        ]
+      },
+      "images": {
+        "background": {
+          "aspectRatio": 1.78,
+          "purpose": [
+            "hero_collection",
+            "hero"
+          ],
+          "format": "png",
+          "roundedCorners": false
+        },
+        "logo": {
+          "aspectRatio": 2.0,
+          "purpose": [
+            "logo"
+          ],
+          "format": "png",
+          "roundedCorners": false
+        }
+      },
+      "texts": {
+        "title": {
+          "field": "title",
+          "type": "full",
+          "sourceEntity": "collection"
+        }
+      },
+      "sets": {
+        "default": {
+          "shelf_grid": {
+            "texts": {
+              "title": {
+                "field": "title",
+                "type": "full",
+                "sourceEntity": "set"
+              }
+            },
+            "breakpoints": {
+              "all": {
+                "tiles": 4,
+                "images": {
+                  "tile": {
+                    "aspectRatio": 1.78,
+                    "purpose": [
+                      "thumbnail",
+                      "tile"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "editorial": {
+      "filters": {
+        "purpose": [
+          "hero",
+          "title_treatment",
+          "hero_collection",
+          "logo",
+          "tile",
+          "thumbnail"
+        ],
+        "aspectRatio": [
+          1.78,
+          2.0
+        ]
+      },
+      "images": {
+        "background": {
+          "aspectRatio": 1.78,
+          "purpose": [
+            "hero_collection",
+            "hero"
+          ],
+          "format": "png",
+          "roundedCorners": false
+        },
+        "logo": {
+          "aspectRatio": 2.0,
+          "purpose": [
+            "logo"
+          ],
+          "format": "png",
+          "roundedCorners": false
+        }
+      },
+      "texts": {
+        "title": {
+          "field": "title",
+          "type": "full",
+          "sourceEntity": "collection"
+        }
+      },
+      "sets": {
+        "default": {
+          "shelf_grid": {
+            "texts": {
+              "title": {
+                "field": "title",
+                "type": "full",
+                "sourceEntity": "set"
+              }
+            },
+            "breakpoints": {
+              "all": {
+                "tiles": 4,
+                "images": {
+                  "tile": {
+                    "aspectRatio": 1.78,
+                    "purpose": [
+                      "thumbnail",
+                      "tile"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "franchise": {
+      "filters": {
+        "purpose": [
+          "hero",
+          "title_treatment",
+          "hero_collection",
+          "logo",
+          "tile",
+          "thumbnail"
+        ],
+        "aspectRatio": [
+          1.78,
+          2.0
+        ]
+      },
+      "images": {
+        "background": {
+          "aspectRatio": 1.78,
+          "purpose": [
+            "hero_collection",
+            "hero"
+          ],
+          "format": "png",
+          "roundedCorners": false
+        },
+        "logo": {
+          "aspectRatio": 2.0,
+          "purpose": [
+            "logo"
+          ],
+          "format": "png",
+          "roundedCorners": false
+        }
+      },
+      "texts": {
+        "title": {
+          "field": "title",
+          "type": "full",
+          "sourceEntity": "collection"
+        }
+      },
+      "sets": {
+        "default": {
+          "shelf_grid": {
+            "texts": {
+              "title": {
+                "field": "title",
+                "type": "full",
+                "sourceEntity": "set"
+              }
+            },
+            "breakpoints": {
+              "all": {
+                "tiles": 4,
+                "images": {
+                  "tile": {
+                    "aspectRatio": 1.78,
+                    "purpose": [
+                      "thumbnail",
+                      "tile"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "watchlist": {
+      "filters": {
+        "purpose": [
+          "tile",
+          "thumbnail"
+        ],
+        "aspectRatio": [
+          1.78
+        ]
+      },
+      "sets": {
+        "default": {
+          "shelf_grid": {
+            "breakpoints": {
+              "all": {
+                "tiles": 4,
+                "images": {
+                  "tile": {
+                    "aspectRatio": 1.78,
+                    "purpose": [
+                      "thumbnail",
+                      "tile"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "contentType": {
+      "filters": {
+        "purpose": [
+          "tile",
+          "thumbnail"
+        ],
+        "aspectRatio": [
+          1.78
+        ]
+      },
+      "texts": {
+        "title": {
+          "field": "title",
+          "type": "full",
+          "sourceEntity": "collection"
+        }
+      },
+      "sets": {
+        "default": {
+          "shelf_grid": {
+            "texts": {
+              "title": {
+                "field": "title",
+                "type": "full",
+                "sourceEntity": "set"
+              }
+            },
+            "breakpoints": {
+              "all": {
+                "tiles": 4,
+                "images": {
+                  "tile": {
+                    "aspectRatio": 1.78,
+                    "purpose": [
+                      "thumbnail",
+                      "tile"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "explore": {
+      "filters": {
+        "purpose": [
+          "tile",
+          "logo",
+          "thumbnail"
+        ],
+        "aspectRatio": [
+          1.78
+        ]
+      },
+      "texts": {
+        "title": {
+          "field": "title",
+          "type": "full",
+          "sourceEntity": "collection"
+        }
+      },
+      "sets": {
+        "default": {
+          "shelf_grid": {
+            "renderTitle": false,
+            "texts": {
+              "title": {
+                "field": "title",
+                "type": "full",
+                "sourceEntity": "set"
+              }
+            },
+            "breakpoints": {
+              "all": {
+                "tiles": 4,
+                "images": {
+                  "tile": {
+                    "aspectRatio": 1.78,
+                    "purpose": [
+                      "thumbnail",
+                      "tile"
+                    ],
+                    "format": "png"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "category": {
+          "render": false
+        },
+        "contentType": {
+          "render": false
+        }
+      }
+    },
+    "home": {
+      "filters": {
+        "purpose": [
+          "title_treatment",
+          "title_card",
+          "thumbnail",
+          "logo",
+          "logo_layer",
+          "tile",
+          "tile_animated",
+          "tile_white",
+          "hero_tile",
+          "title_treatment_layer",
+          "hero_collection"
+        ],
+        "aspectRatio": [
+          1.78,
+          3.0,
+          3.91,
+          1.33,
+          1.2,
+          2.0
+        ],
+        "text_field": [
+          "title"
+        ],
+        "text_type": [
+          "full"
+        ]
+      },
+      "sets": {
+        "default": {
+          "shelf_grid": {
+            "texts": {
+              "title": {
+                "field": "title",
+                "type": "full",
+                "sourceEntity": "set"
+              }
+            },
+            "breakpoints": {
+              "all": {
+                "tiles": 5,
+                "images": {
+                  "tile": {
+                    "aspectRatio": 1.78,
+                    "purpose": [
+                      "thumbnail",
+                      "tile"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        "brand": {
+          "shelf_grid": {
+            "renderTitle": false,
+            "breakpoints": {
+              "all": {
+                "tiles": 5,
+                "images": {
+                  "tile": {
+                    "aspectRatio": 1.78,
+                    "purpose": [
+                      "tile"
+                    ],
+                    "format": "png",
+                    "hover": "animate"
+                  },
+                  "tile_animated": {
+                    "aspectRatio": 1.78,
+                    "purpose": [
+                      "tile_animated"
+                    ],
+                    "isRaw": true
+                  },
+                  "focus": {
+                    "aspectRatio": 1.78,
+                    "purpose": [
+                      "tile_white"
+                    ],
+                    "format": "png"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ContinueWatchingSet": {
+          "shelf_grid": {
+            "texts": {
+              "title": {
+                "field": "title",
+                "type": "full",
+                "sourceEntity": "set"
+              }
+            },
+            "breakpoints": {
+              "all": {
+                "tiles": 5,
+                "images": {
+                  "tile": {
+                    "aspectRatio": 1.78,
+                    "purpose": [
+                      "tile"
+                    ]
+                  },
+                  "focus": {
+                    "aspectRatio": 1.78,
+                    "purpose": [
+                      "thumbnail"
+                    ]
+                  },
+                  "focus_any": {
+                    "purpose": [
+                      "thumbnail"
+                    ]
+                  },
+                  "focus_sd": {
+                    "aspectRatio": 1.33,
+                    "purpose": [
+                      "thumbnail"
+                    ]
+                  }
+                },
+                "texts": {
+                  "titleMovie": {
+                    "field": "title",
+                    "type": "full",
+                    "sourceEntity": "program"
+                  },
+                  "titleSeries": {
+                    "field": "title",
+                    "type": "full",
+                    "sourceEntity": "series"
+                  },
+                  "titleEpisode": {
+                    "field": "title",
+                    "type": "full",
+                    "sourceEntity": "program"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "featured": {
+          "shelf_grid": {
+            "renderTitle": false,
+            "texts": {
+              "title": {
+                "field": "title",
+                "type": "full",
+                "sourceEntity": "set"
+              }
+            },
+            "breakpoints": {
+              "all": {
+                "tiles": 6,
+                "images": {
+                  "tile": {
+                    "aspectRatio": 1.2,
+                    "purpose": [
+                      "tile"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        "hero": {
+          "shelf_grid": {
+            "renderTitle": false,
+            "breakpoints": {
+              "all": {
+                "tiles": 1,
+                "images": {
+                  "tile": {
+                    "aspectRatio": 3.91,
+                    "purpose": [
+                      "hero_tile",
+                      "hero"
+                    ]
+                  },
+                  "logo": {
+                    "aspectRatio": 3.91,
+                    "purpose": [
+                      "title_treatment_layer",
+                      "logo_layer"
+                    ],
+                    "format": "png",
+                    "roundedCorners": false
+                  },
+                  "logo_collection": {
+                    "aspectRatio": 3.91,
+                    "purpose": [
+                      "logo_layer"
+                    ],
+                    "format": "png",
+                    "roundedCorners": false
+                  },
+                  "tile_full_bleed": {
+                    "aspectRatio": 3.0,
+                    "purpose": [
+                      "hero_tile",
+                      "hero"
+                    ],
+                    "format": "png",
+                    "roundedCorners": false
+                  },
+                  "logo_full_bleed": {
+                    "aspectRatio": 3.0,
+                    "purpose": [
+                      "title_treatment_layer",
+                      "logo_layer"
+                    ],
+                    "format": "png",
+                    "roundedCorners": false
+                  },
+                  "logo_full_bleed_collection": {
+                    "aspectRatio": 3.0,
+                    "purpose": [
+                      "logo_layer"
+                    ],
+                    "format": "png",
+                    "roundedCorners": false
+                  }
+                }
+              }
+            }
+          }
+        },
+        "HeroContainer": {
+          "shelf_grid": {
+            "renderTitle": false,
+            "breakpoints": {
+              "all": {
+                "tiles": 1,
+                "images": {
+                  "tile": {
+                    "aspectRatio": 3.91,
+                    "purpose": [
+                      "hero_tile",
+                      "hero"
+                    ]
+                  },
+                  "logo": {
+                    "aspectRatio": 3.91,
+                    "purpose": [
+                      "title_treatment_layer",
+                      "logo_layer"
+                    ],
+                    "format": "png",
+                    "roundedCorners": false
+                  },
+                  "logo_collection": {
+                    "aspectRatio": 3.91,
+                    "purpose": [
+                      "logo_layer"
+                    ],
+                    "format": "png",
+                    "roundedCorners": false
+                  }
+                }
+              }
+            }
+          }
+        },
+        "HeroFullBleedContainer": {
+          "shelf_grid": {
+            "renderTitle": false,
+            "breakpoints": {
+              "all": {
+                "tiles": 1,
+                "images": {
+                  "tile": {
+                    "aspectRatio": 3.0,
+                    "purpose": [
+                      "hero_tile",
+                      "hero"
+                    ],
+                    "format": "png",
+                    "roundedCorners": false
+                  },
+                  "logo": {
+                    "aspectRatio": 3.0,
+                    "purpose": [
+                      "title_treatment_layer",
+                      "logo_layer"
+                    ],
+                    "format": "png",
+                    "roundedCorners": false
+                  },
+                  "logo_collection": {
+                    "aspectRatio": 3.0,
+                    "purpose": [
+                      "logo_layer"
+                    ],
+                    "format": "png",
+                    "roundedCorners": false
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "originals": {
+      "filters": {
+        "purpose": [
+          "logo",
+          "tile",
+          "thumbnail"
+        ],
+        "aspectRatio": [
+          1.78
+        ],
+        "text_field": [
+          "title"
+        ],
+        "text_type": [
+          "full"
+        ]
+      },
+      "images": {
+        "logo": {
+          "purpose": [
+            "logo"
+          ],
+          "format": "png",
+          "roundedCorners": false
+        }
+      },
+      "sets": {
+        "default": {
+          "shelf_grid": {
+            "texts": {
+              "title": {
+                "field": "title",
+                "type": "full",
+                "sourceEntity": "set"
+              }
+            },
+            "breakpoints": {
+              "all": {
+                "tiles": 3,
+                "images": {
+                  "tile": {
+                    "aspectRatio": 1.78,
+                    "purpose": [
+                      "thumbnail",
+                      "tile"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
